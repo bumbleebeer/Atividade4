@@ -1,0 +1,96 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif; /* Fonte limpa e legível */
+    background-color: var(--color-bg);       /* Fundo suave para todo o site */
+    color: var(--color-text);                /* Cor padrão dos textos */
+    line-height: 1.6;                        /* Espaço entre linhas confortável */
+    min-height: 100vh;                       /* Garante altura mínima de tela cheia */
+}
+
+
+.fotoPerfil {
+    height: 220px;
+    width: 220px;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    box-shadow: 0 8px 10px rgba(49, 49, 49, 0.2);
+    border: 2px solid var(--secondary-color);
+    object-fit: cover;
+    zoom: 1.4;
+}
+
+#hero {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#descricaoFoto {
+    text-align: center;   
+}
+
+#hero h2 {
+    margin-bottom: 0.2rem;
+}
+
+#hero p {
+    margin-top: 0%;
+}
+
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  
+}
+
+.navi-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: var(--spacing-sm) 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navi-item a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.navi-item a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.container {
+    display: grid;
+    width: 90%;                  
+    max-width: var(--max-width); 
+    margin: 0 auto;              
+    padding:  var(--spacing-sm);
+    text-align: center;
+    border: 1px solid #333; /* borda ao redor do grid */
+    background-color: #ccc;
+    
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
