@@ -6,19 +6,31 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Felipe de Azeredo | Portfólio</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav id="navi">
-          <ul class="navi-list">
-            <li class="navi-item"><a href="#sobremim">Sobre mim</a></li>
-            <li class="navi-item"><a href="#habilidades">Habilidades</a></li>
-            <li class="navi-item"><a href="#projetos">Projetos</a></li>
-            <li class="navi-item"><a href="#contato">Contato</a></li>
-          </ul>
-        </nav>
+  <header class="header">
+    <button
+      id="navToggle"
+      class="nav-toggle"
+      aria-controls="navMenu"
+      aria-expanded="false"
+      aria-label="Abrir menu"
+    >
+      &#9776;
+    </button>
+      <nav id="navMenu" class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#sobremim">Sobre mim</a></li>
+          <li class="nav-item"><a href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -32,19 +44,20 @@
       </section>
 
         <section id="sobremim" class="container">
+          <h2>Sobre mim</h2>
           <div id="sobreConteudo">
-            <h2>Sobre mim</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quas obcaecati assumenda minima accusantium alias earum error sequi, hic adipisci omnis perferendis possimus sit quia qui? Hic sunt veritatis dicta!</p>
+            <p>Desde pequeno, sou fascinado por tudo que envolve computação desde softwares a hardwares. 
+Essa curiosidade me levou a área de Análise e Desenvolvimento de Sistemas, e desde então, venho buscando me especializar cada vez mais em linguagens de programação e nas melhores práticas do desenvolvimento de sistemas.</p>
           </div>
         </section>
 
         <section id="habilidades" class="container">
+          <h2>Minhas Habilidades</h2>
           <div id="habilidadesConteudo">
-            <h2>Minhas Habilidades</h2>
-                <div class="devicon-html5-plain colored"> HTML5</div>
-                <div class="devicon-css3-plain colored"> CSS3</div>
-                <div class="devicon-javascript-plain colored"> JavaScript</div>
-                <div class="devicon-mysql-plain colored"> MySQL</div>
+                <div class="devicon-html5-plain colored"> </div>
+                <div class="devicon-css3-plain colored"> </div>
+                <div class="devicon-javascript-plain colored"> </div>
+                <div class="devicon-mysql-plain colored"> </div>
           </div>
         </section>
 
@@ -54,6 +67,7 @@
             <article class="projetoCard">
               <div class="conteudoProjeto">
                 <h3 class="tituloProjeto">Registro de Cadastro - CRUD</h3>
+                <img class="imgProjeto" src="/Atividade4/assets/CRUD.png">
                 <h4 class="descricaoProjeto">Um Crud de registro para empresas onde podemos cadastrar, editar e excluir as informações</h4>
                 <p class="tecnoProjeto">
                   <span>HTML</span>
@@ -67,9 +81,9 @@
         </section>
         
         <section id="contato" class="container">
+          <h2>Contato</h2>
+          <p class="descConteudo">Gostou do meu trabalho ? Me chama em uma das redes abaixo:</p>
           <div class="contatoConteudo">
-            <h2>Contato</h2>
-            <p>Gostou do meu trabalho e quer entrar em contato ? Me chama em uma das redes abaixo:</p>
             <a href="https://www.linkedin.com/in/flpav/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x" style="color: #0077b5;"></i></a>
             <a href="https://www.instagram.com/ufelipe1_/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-2x" style="color: #e1306c;" > </i></a>
             <a href="https://github.com/bumbleebeer" target="_blank" aria-label="GitHub" ><i class="fab fa-github fa-2x" style="color: #333;"></i></a>
@@ -83,6 +97,8 @@
   <footer class="footer">
     <p>&copy; 2025 Felipe de Azeredo. Todos os direitos reservados.</p>
   </footer>
+
+<script src="app.js"></script>
 
 </body>
 </html>
